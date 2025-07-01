@@ -1,14 +1,14 @@
 <template>
-  <p>Mouse: {{x}}x{{y}}</p>
+  <MyUniversalVuePlugin />
 </template>
 
 <script>
-import { useMouse } from '@vue-demi/use-mouse'
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
-  name: 'App',
-  setup() {
-    return useMouse()
-  }
-}
+  name: "App",
+  components: {
+    HelloWorld,
+  },
+};
 </script>
