@@ -1,0 +1,23 @@
+export default {
+  props: {
+    message: {
+      type: String,
+      default: "Hello from Render Component!",
+    },
+  },
+  render(h) {
+    return h(
+      "div",
+      {
+        style: {
+          color: "blue",
+          fontWeight: "bold",
+        },
+      },
+      [
+        h("h2", this.message),
+        h("p", "This component was rendered programmatically."),
+      ]
+    );
+  },
+};
