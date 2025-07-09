@@ -1,6 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
-import MyUniversalVuePlugin from "../libs/admin/index.js"; // Adjust the path as necessary
+import MyUniversalVuePlugin from "../libs/admin";
 
 Vue.config.productionTip = false;
 Vue.use(MyUniversalVuePlugin, {

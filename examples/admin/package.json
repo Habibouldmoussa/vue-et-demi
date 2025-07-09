@@ -11,14 +11,18 @@
   "devDependencies": {
     "@rollup/plugin-auto-install": "^3.0.5",
     "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.4",
     "rollup": "^4.44.2",
+    "tslib": "^2.8.1",
     "typescript": "^5.8.3",
     "vue": "^2.7.16"
   },
   "scripts": {
-    "build": "npx rimraf dist && npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc --module es2015 --outDir dist/admin -d",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "tslib": {
+    "optional": true
   },
   "files": [
     "dist"

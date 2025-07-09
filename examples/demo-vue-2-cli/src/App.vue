@@ -1,14 +1,13 @@
 <template>
-  <p>test</p>
+  <div>
+    <p>test</p>
+    <MyPluginComponent />
+  </div>
 </template>
 
 <script>
-//import HelloWorld from "./components/HelloWorld.vue";
-
+import MyPluginComponent from "../libs/admin";
 export default {
   name: "App",
-  // components: {
-  //   HelloWorld,
-  // },
 };
 </script>
