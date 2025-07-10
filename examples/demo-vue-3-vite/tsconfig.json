@@ -1,14 +1,19 @@
 {
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
   "compilerOptions": {
-    "module": "ESNext",
-    "lib": ["ESNext", "DOM"],
-    "target": "es2016",
-    "outDir": "dist",
-    "rootDir": "./src",
-    "moduleResolution": "node",
-  },
-  "exclude": [
-    "node_modules",
-    "**/node_modules/*"
-  ]
+    "baseUrl": ".",
+    "paths": {
+      "./libs/admin/index.js": [
+        "./libs/admin/admin.d.ts"
+      ]
+    }
+  }
 }

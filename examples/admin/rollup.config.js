@@ -6,7 +6,7 @@ export default {
   input: "src/index.ts",
   output: {
     dir: "dist/admin",
-    format: "cjs",
+    format: "es",
   },
   plugins: [
     auto(),
