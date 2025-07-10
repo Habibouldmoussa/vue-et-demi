@@ -43,5 +43,8 @@
     "@vue/composition-api": {
       "optional": true
     }
+  },
+  "dependencies": {
+    "vue-paystack2": "^0.0.9"
   }
 }

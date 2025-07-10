@@ -9,7 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.17"
+    "vue": "^3.5.17",
+    "vue-demi": "^0.14.10"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.0",
@@ -17,5 +18,10 @@
     "typescript": "~5.8.3",
     "vite": "^7.0.3",
     "vue-tsc": "^2.2.12"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }

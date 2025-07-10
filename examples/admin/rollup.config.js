@@ -1,5 +1,4 @@
 import typescript from "@rollup/plugin-typescript";
-import auto from "@rollup/plugin-auto-install";
 import resolve from "@rollup/plugin-node-resolve";
 
 export default {
@@ -8,13 +7,13 @@ export default {
     dir: "dist/admin",
     format: "es",
   },
+  external: ["vue-demi"],
   plugins: [
-    auto(),
     resolve(),
     typescript({
       declaration: true,
-      declarationDir: "dist/admin/types",
-      outDir: "dist/admin/types",
+      declarationDir: "dist/admin",
+      outDir: "dist/admin",
     }),
   ],
 };

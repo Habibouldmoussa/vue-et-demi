@@ -11,9 +11,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "./libs/admin/index.js": [
-        "./libs/admin/admin.d.ts"
+      "./libs/admin": [
+        "libs/admin/types/index.d.ts"
       ]
     }
-  }
+  },
+  "allowJs": true,
 }

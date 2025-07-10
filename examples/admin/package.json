@@ -9,13 +9,20 @@
     "vue-demi": "^0.14.10"
   },
   "devDependencies": {
-    "@rollup/plugin-auto-install": "^3.0.5",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-typescript": "^12.1.4",
     "rollup": "^4.44.2",
     "tslib": "^2.8.1",
-    "typescript": "^5.8.3",
-    "vue": "^2.7.16"
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^3.0.0-0 || ^2.6.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
   },
   "scripts": {
     "build": "rollup -c",
