@@ -13,11 +13,12 @@
     "@rollup/plugin-typescript": "^12.1.4",
     "rollup": "^4.44.2",
     "tslib": "^2.8.1",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vue": "2.7.16"
   },
   "peerDependencies": {
     "@vue/composition-api": "^1.0.0-rc.1",
-    "vue": "^3.0.0-0 || ^2.6.0"
+    "vue": "^3.0.0-0 || ^2.7.16"
   },
   "peerDependenciesMeta": {
     "@vue/composition-api": {
