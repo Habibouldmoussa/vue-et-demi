@@ -5,7 +5,6 @@
       "ESNext",
       "DOM"
     ],
-    "target": "ESNext",
     "outDir": "dist",
     "rootDir": "./src",
     "moduleResolution": "node",

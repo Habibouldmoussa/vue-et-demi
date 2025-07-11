@@ -1,10 +1,8 @@
-declare const MyPluginComponent: {
+type MyPluginComponent = {
     name: string;
-    setup(): {
-        count: import("vue-demi").Ref<number, number>;
-    };
-    render(): import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
-        [key: string]: any;
-    }>;
+    count?: number;
+    setup: () => void;
+    render: () => void;
 };
+declare const MyPluginComponent: MyPluginComponent;
 export default MyPluginComponent;

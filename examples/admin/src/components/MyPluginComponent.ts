@@ -1,6 +1,12 @@
 import { ref, h } from "vue-demi";
+type MyPluginComponent = {
+  name: string;
+  count?: number;
+  setup: () => void;
+  render: () => void;
+};
 
-const MyPluginComponent = {
+const MyPluginComponent: MyPluginComponent = {
   name: "MyPluginComponent",
   setup() {
     const count = ref(1);

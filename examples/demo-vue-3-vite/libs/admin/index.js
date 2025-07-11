@@ -14,7 +14,6 @@ const MyPluginComponent = {
 
 const MyUniversalVuePlugin = {
     install(app, options) {
-        // Vue 2 installation
         if (isVue3) {
             // Vue 3 API
             app.config.globalProperties.$myPlugin = {

@@ -7,7 +7,6 @@ interface MyPluginOptions {
 
 const MyUniversalVuePlugin: Plugin = {
   install(app: typeof Vue2 | App, options?: MyPluginOptions) {
-    // Vue 2 installation
     if (isVue3) {
       // Vue 3 API
       (
