@@ -5,7 +5,7 @@ export default {
   input: "src/index.ts",
   output: {
     dir: "dist/admin",
-    format: "es",
+    format: "cjs",
   },
   external: ["vue-demi"],
   plugins: [

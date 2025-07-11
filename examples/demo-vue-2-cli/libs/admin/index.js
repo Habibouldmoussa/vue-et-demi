@@ -1,37 +1,27 @@
-import { h, ref, isVue3 } from 'vue-demi';
+'use strict';
+
+var vueDemi = require('vue-demi');
 
 const MyPluginComponent = {
     name: "MyPluginComponent",
     setup() {
-        const count = ref(1);
+        const count = vueDemi.ref(1);
         console.log("MyPluginComponent setup called");
         return { count };
     },
     render() {
-        return h("div", `Plugin Component: ${this.count}`);
+        return vueDemi.h("div", `Plugin Component: ${this.count}`);
     },
 };
 
 const MyUniversalVuePlugin = {
     install(app, options) {
-        // Vue 2 installation
-        if (isVue3) {
-            // Vue 3 API
-            app.config.globalProperties.$myPlugin = {
-                version: "0.1.0",
-                message: options?.globalMessage || "Bienvenue dans mon plugin universel!",
-            };
-            app.component("MyPluginComponent", MyPluginComponent);
-        }
-        else {
-            // Vue 2 API
-            app.prototype.$myPlugin = {
-                version: "0.1.0",
-                message: options?.globalMessage || "Bienvenue dans mon plugin universel!",
-            };
-            app.component("MyPluginComponent", MyPluginComponent);
-        }
+        app.prototype.$myPlugin = {
+            version: "0.1.0",
+            message: (options === null || options === void 0 ? void 0 : options.globalMessage) || "Bienvenue dans mon plugin universel!",
+        };
+        app.component("MyPluginComponent", MyPluginComponent);
     },
 };
 
-export { MyUniversalVuePlugin as default };
+module.exports = MyUniversalVuePlugin;
