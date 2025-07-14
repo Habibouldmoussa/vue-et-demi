@@ -1,9 +1,9 @@
 import Vue from "vue";
 import App from "./App.vue";
-import MyUniversalVuePlugin from "../libs/admin";
+import Admin from "../libs/admin";
 
 Vue.config.productionTip = false;
-Vue.use(MyUniversalVuePlugin, {
+Vue.use(Admin, {
   globalMessage: "Bienvenue dans mon plugin universel!",
 });
 new Vue({

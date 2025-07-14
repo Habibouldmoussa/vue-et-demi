@@ -14,8 +14,7 @@
     "skipLibCheck": true
   },
   "include": [
-    "src/**/*.ts",
-    "../Rondo/dist/cjs/*.js"
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules",

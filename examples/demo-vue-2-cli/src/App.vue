@@ -1,12 +1,12 @@
 <template>
   <div>
     <p>test</p>
-    <MyPluginComponent />
+    <AdminComponent />
   </div>
 </template>
 
 <script>
-import MyPluginComponent from "../libs/admin";
+import AdminComponent from "../libs/admin";
 export default {
   name: "App",
 };

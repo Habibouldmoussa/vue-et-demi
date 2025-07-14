@@ -1,16 +1,16 @@
 import { ref, h } from "vue-demi";
-type MyPluginComponent = {
+type AdminComponent = {
   name: string;
   count?: number;
   setup: () => void;
   render: () => void;
 };
 
-const MyPluginComponent: MyPluginComponent = {
-  name: "MyPluginComponent",
+const AdminComponent: AdminComponent = {
+  name: "AdminComponent",
   setup() {
     const count = ref(1);
-    console.log("MyPluginComponent setup called");
+    console.log("AdminComponent setup called");
     return { count };
   },
   render() {
@@ -18,4 +18,4 @@ const MyPluginComponent: MyPluginComponent = {
   },
 };
 
-export default MyPluginComponent;
+export default AdminComponent;

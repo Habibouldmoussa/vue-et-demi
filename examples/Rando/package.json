@@ -1,5 +1,5 @@
 {
-  "name": "my-universal-vue-plugin",
+  "name": "rando",
   "version": "0.0.1",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -7,7 +7,6 @@
   "type": "module",
   "license": "MIT",
   "dependencies": {
-    "Rando": "file:../Rando",
     "vue-demi": "^0.14.10"
   },
   "devDependencies": {

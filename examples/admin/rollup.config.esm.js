@@ -4,17 +4,17 @@ import resolve from "@rollup/plugin-node-resolve";
 export default {
   input: "src/index.ts",
   output: {
-    dir: "dist/cjs/admin",
-    format: "cjs",
+    dir: "dist/esm/admin",
+    format: "es",
   },
-  external: ["vue-demi", "Rando/dist/cjs/Rando"],
+  external: ["vue-demi", "Rando/dist/esm/Rando"],
   plugins: [
     resolve(),
     typescript({
       declaration: true,
-      declarationDir: "dist/cjs/admin",
-      outDir: "dist/cjs/admin",
-      target: "ES2015",
+      declarationDir: "dist/esm/admin",
+      outDir: "dist/esm/admin",
+      target: "ESNext",
     }),
   ],
 };

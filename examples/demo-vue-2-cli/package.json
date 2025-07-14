@@ -7,12 +7,22 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "Rando": "file:../Rando",
     "vue": "^2.7.16"
   },
   "devDependencies": {
     "@vue/cli-service": "~4.4.6",
     "vue-demi": "^0.14.10",
     "vue-template-compiler": "^2.7.16"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^3.0.0-0 || ^2.6.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
   },
   "browserslist": [
     "> 1%",
